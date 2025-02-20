@@ -4,9 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="hr">
 	<head>
-		<title>Massively by HTML5 UP</title>
+		<title>Weld Inspect</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,12 +17,17 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
+				<select id="languageSwitcher">
+					<option value="hr">Hrvatski</option>
+					<option value="en">English</option>
+				</select>
+
 				<!-- Intro -->
 					<div id="intro">
-						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						<h1>Weld<br />
+						Inspect</h1>
+						<p id="intro_text">Weld Inspect pruža stručne usluge inspekcije zavara, vođenja eGrađevinskog Dnevnika
+							i nadzora gradilišta, osiguravajući vrhunsku kvalitetu i sigurnost u građevinskim i industrijskim projektima.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -30,15 +35,13 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Weld Inspect</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li class="active"><a href="index.html">Weld Inspect</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -54,7 +57,7 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
+									<span class="date" id="start_date">Since 2022</span>
 									<h2><a href="#">And this is a<br />
 									massive headline</a></h2>
 									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
@@ -143,21 +146,6 @@
 								</article>
 							</section>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
-
 					</div>
 
 				<!-- Footer -->
@@ -186,16 +174,16 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<p>Marina Tartaglie 10<br />
+								Zagreb, 10000</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p><a href="#">+385 91 235 8802</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="#">r.brajko1969@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -224,6 +212,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/translation.js"></script>
 
 	</body>
 </html>
