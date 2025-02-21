@@ -60,3 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("languageSwitcher").addEventListener("change", (event) => {
     setLanguage(event.target.value);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const languageSwitcher = document.getElementById("languageSwitcher");
+
+    languageSwitcher.addEventListener("click", function () {
+        this.classList.toggle("open");
+    });
+});
